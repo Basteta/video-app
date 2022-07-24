@@ -1,0 +1,75 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.Header {
+  font-weight: 400;
+  font-size: 50px;
+  padding: 50px;
+}
+
+.Body {
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.BodyControl {
+  width: 250px;
+  padding: 0 0 0 100px;
+}
+
+.BodyVideo {
+  width: calc(100% - 250px);
+
+  .video {
+    border: 2px solid #d3d3d3;
+    border-radius: 4px;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 420px;
+  }
+}
+
+.BodyGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.BodyGroup.search {
+  position: relative;
+}
+
+.BodyGroup span {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 850px)  {
+  .Body {
+    flex-direction: column;
+  }
+
+  .BodyControl {
+    padding: 0;
+    width: 100vw;
+
+    .BodyGroup {
+      margin-left: 50px;
+    }
+  }
+
+  .BodyVideo {
+    width: 100vw;
+
+    .video {
+      height: 200px;
+    }
+  }
+}
